@@ -36,6 +36,11 @@ function writePassword() {
     }
     if (genCriteria[3] === true) {
       compChoice = compChoice.concat("!@#$%^&*()-_+=~/|[]{},.`<>?");
+    } 
+    
+    if (compChoice == 0) {
+      alert("Password must contain at least one of the following (lowercase,uppercase,numbers, or symbols.) Please try again.");
+      return
     }
     passwordLength = userChoice
     console.log(compChoice)
